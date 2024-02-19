@@ -38,7 +38,7 @@ public class User implements UserDetails {
         this.role = role;
     }
 
-    public User() {}
+    public User(String name2, String email2, String password2) {}
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
