@@ -2,11 +2,13 @@ package com.thallesdaniel.paymentsystem.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.stereotype.Service;
 
 import com.thallesdaniel.paymentsystem.entity.User;
 import com.thallesdaniel.paymentsystem.repository.UserRepository;
 import com.thallesdaniel.paymentsystem.utils.RandomString;
 
+@Service
 public class UserService {
     @Autowired
     private UserRepository userRepository;
