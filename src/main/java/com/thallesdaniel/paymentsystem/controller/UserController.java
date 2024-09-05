@@ -17,13 +17,13 @@ import java.io.UnsupportedEncodingException;
 
 
 @RestController
-@RequestMapping("/user")
+@RequestMapping("/api/v1/user")
 public class UserController {
     @Autowired
     private UserService userService;
 
 
-    @PostMapping
+    @PostMapping("/register")
     public ResponseEntity <UserResponse> registerUser(@RequestBody @Valid UserRequest userRequest) throws MessagingException, UnsupportedEncodingException {
         User user = userRequest.toModel();
         UserResponse userSaved = userService.registerUser(user);
@@ -32,9 +32,9 @@ public class UserController {
     @GetMapping("/verify")
     public String verifyUser(@Param("code") String code){
         if(userService.verify(code)){
-            return "verify_success";
+            return "Seu email foi validado!";
         } else {
-            return "verify_fail";
+            return "Ocorreu um erro na validação do seu email! Entre em contato com o suporte!";
         }
     }
     @GetMapping("/teste")
