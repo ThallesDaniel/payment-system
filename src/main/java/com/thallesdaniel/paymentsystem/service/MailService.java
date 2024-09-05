@@ -17,7 +17,7 @@ public class MailService {
     private String verifyURL = "http://localhost:8080/user/verify?code=";
     public void sendVerificationEmail(User user) throws MessagingException, UnsupportedEncodingException {
         String toAddres = user.getEmail();
-        String fromAddres = "batata18cm88@gmail.com";
+        String fromAddres = "th.yukky@gmail.com";
         String senderName = "Teste";
         String subject = "Pleace Verify your Registration";
         String content = "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional //EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n" +
