@@ -7,6 +7,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 
 import java.util.Collection;
 
+
 @Getter
 @Setter
 @Entity(name = "users")
@@ -37,17 +38,14 @@ public class User implements UserDetails {
         this.enabled = enabled;
     }
 
-    public User(String name, String email, String password, String role) {
-        this.name = name;
-        this.email = email;
-        this.password = password;
-        this.role = role;
-    }
+    // public User(String name, String email, String password, String role) {
+    //     this.name = name;
+    //     this.email = email;
+    //     this.password = password;
+    //     this.role = role;
+    // }
 
-    public User() {
-    }
-
-    public User(String name, String email, String password) {
+    public User(String name, String email, String password ) {
         this.name = name;
         this.email = email;
         this.password = password;
@@ -57,15 +55,6 @@ public class User implements UserDetails {
     public Collection<? extends GrantedAuthority> getAuthorities() {
 
         return null;
-    }
-
-    @Override
-    public String getPassword() {
-        return null;
-    }
-
-    public String getName() {
-        return name;
     }
 
     @Override
@@ -90,9 +79,5 @@ public class User implements UserDetails {
     @Override
     public boolean isEnabled(){
         return this.enabled;
-    }
-
-    public String getEmail() {
-        return getEmail();
     }
 }

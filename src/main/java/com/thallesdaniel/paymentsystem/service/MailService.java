@@ -416,7 +416,7 @@ public class MailService {
 
         content = content.replace("[[NAME]]", user.getName());
 
-        //String verifyURL = this.verifyURL + user.getVerificationCode();
+        String verifyURL = this.verifyURL + user.getVerificationCode();
 
         content = content.replace("[[URL]]", verifyURL);
 
