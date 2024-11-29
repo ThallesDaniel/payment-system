@@ -90,6 +90,3 @@ EN CONEXIÓN CON EL SOFTWARE O EL USO U OTRAS OPERACIONES EN EL SOFTWARE.
 - Este repositorio contiene **una versión parcial del código completo**, que está protegido y reservado para los propósitos personales y comerciales del autor.  
 - Las modificaciones realizadas en este repositorio pueden ser incorporadas a la versión completa del código a discreción del autor, con el debido reconocimiento a los colaboradores.  
 
----
-
-Caso precise de mais ajustes, é só pedir!
