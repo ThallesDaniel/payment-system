@@ -7,8 +7,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.thallesdaniel.paymentsystem.dto.CreditPaymentRequest;
 import com.thallesdaniel.paymentsystem.dto.DebitPaymentRequest;
 import com.thallesdaniel.paymentsystem.dto.PixPaymentRequest;
+import com.thallesdaniel.paymentsystem.entity.CreditTransaction;
 import com.thallesdaniel.paymentsystem.entity.DebitTransaction;
 import com.thallesdaniel.paymentsystem.entity.PixTransaction;
 import com.thallesdaniel.paymentsystem.service.PaymentService;
@@ -32,6 +34,12 @@ public class TransferController {
     @PostMapping("/debito")
     public ResponseEntity<DebitTransaction> realizarPagamentoDebito(@Valid @RequestBody DebitPaymentRequest request) {
         DebitTransaction transaction = paymentService.realizarPagamentoDebito(request);
+        return new ResponseEntity<>(transaction, HttpStatus.CREATED);
+    }
+
+    @PostMapping("/credito")
+    public ResponseEntity<CreditTransaction> realizarPagamentoCredito(@Valid @RequestBody CreditPaymentRequest request) {
+        CreditTransaction transaction = paymentService.realizarPagamentoCredito(request);
         return new ResponseEntity<>(transaction, HttpStatus.CREATED);
     }
 }
