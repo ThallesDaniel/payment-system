@@ -14,7 +14,7 @@ O **Payment System** é um sistema de pagamentos robusto e flexível, em desenvo
 - **Spring Framework**: Framework usado para facilitar o desenvolvimento e a manutenção do projeto.
 - **PostgreSQL**: Banco de dados relacional para armazenar informações das transações e usuários.
 - **Docker**: Gerenciamento de contêineres para simplificar a configuração e a execução do ambiente do sistema.
-
+- **Swagger**: Ao iniciar a aplicação, acesse http://localhost:8080/swagger-ui/ para ter acesso a documentação da aplicação.
 ---
 
 ## Funcionalidades (em desenvolvimento)
@@ -41,6 +41,7 @@ Certifique-se de ter as seguintes ferramentas instaladas:
 - [Maven](https://maven.apache.org/download.cgi)
 - [Docker](https://www.docker.com/)
 - [PostgreSQL](https://www.postgresql.org/download/)
+- [Swagger](https://swagger.io/)
 
 ### Passo a Passo
 
