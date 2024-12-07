@@ -1,4 +1,4 @@
-# Payment System - Criptopsy
+# Payment System - Criptopay
 
 ## Descrição
 
