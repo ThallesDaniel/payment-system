@@ -3,9 +3,14 @@ package com.thallesdaniel.paymentsystem.dto;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Positive;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
-@Data
+@AllArgsConstructor
+@Getter
+@Setter
 public class PixPaymentRequest {
 
     @NotBlank(message = "O campo 'chavePixDestinatario' é obrigatório.")

@@ -2,8 +2,11 @@ package com.thallesdaniel.paymentsystem.dto;
 
 
 import jakarta.validation.constraints.*;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
+@AllArgsConstructor
 @Data
 public class CreditPaymentRequest {
     @NotBlank(message = "O campo 'numeroCartao' é obrigatório.")
