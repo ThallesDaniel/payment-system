@@ -107,4 +107,4 @@ Este projeto está licenciado sob a [MIT License](LICENSE).
 Para mais informações, entre em contato:
 
 - **Autor**: Thalles Daniel
-- **E-mail**: contato@thallesdaniel.com
+- **E-mail**: th4llesdaniel@gmail.com
